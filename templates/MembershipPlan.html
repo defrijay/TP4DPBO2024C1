@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Skin 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="MembershipPlan.php">Membership Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Payments.php">Customer Payments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-5 align-center">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12 mx-auto my-5 mb-5 p-5 bg-white rounded-5 shadow-lg">
+      <h1 class="text-center pt-3">Add Subscription</h1>
+      <form action="author.php" method="POST">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group mt-3">
+                <label for="tname">Subscription Name</label>
+                <input type="text" class="form-control" name="tname" required />
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group mt-3">
+                <label for="trprice">Subscription Price</label>
+                <input type="text" class="form-control" name="tprice" required />
+              </div>
+            </div>
+            <div class="col-md-8 d-grid gap-2">
+              <button type="submit" name="add" class="btn btn-primary mt-3">Add</button>
+            </div>
+            <div class="col-md-4 d-grid gap-2">
+              <button type="reset" class="btn btn-outline-primary mt-3">Reset</button>
+            </div>
+          
+          </div>
+        </div>
+      </form>
+      
+
+    </div>
+    <div class = "container p-5 bg-white rounded-5 shadow-lg">
+      <h1 class="text-center mb-3">Subscription Table</h1>
+      <div class = "row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+          <table class="table table-info table-stripped table-hover text-center" text-center border="1">
+            <tr>
+              <th>No</th>
+              <th>Subscription Name</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+            DATA_TABEL
+          </table>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

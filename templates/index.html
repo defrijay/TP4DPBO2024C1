@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Skin 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="MembershipPlan.php">Membership Plan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Payments.php">Customer Payments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class ="row d-flex justify-content-center">
+      <div class="col-md-12 mb-5">
+        <div class="card p-5 mt-3 rounded-3 shadow-lg">
+          <h2 class="card-title">Edit Customer</h2>
+          <form action="index.php" method="POST">
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="tjudul">Name</label>
+                <input type="text" class="form-control" name="tjudul" required />
+              </div>
+            </div>
+  
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="tpenerbit">Email</label>
+                <input type="text" class="form-control" name="tpenerbit" required />
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="tdeskripsi">Deskripsi</label>
+                <textarea class="form-control" name="tdeskripsi" rows="3" required></textarea>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="tpenerbit">Date Subscription</label>
+                <input type="date" class="form-control" name="tpenerbit" required />
+              </div>
+            </div>
+  
+  
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="tauthor">Membership Plan ID</label>
+                <select class="custom-select form-control" name="cmbauthor">
+                  <option selected>=== Select Membership Plan ID ===</option>
+                  OPTION
+                </select>
+              </div>
+            </div>
+  
+  
+            <button type="submit" name="add" class="btn btn-primary mt-3">Add</button>
+            <button type="reset" name="add" class="btn btn-outline-primary mt-3">Reset</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-12 m-3 p-5 bg-white shadow-lg rounded-5">
+        <h1 class="text-center mb-3">List Customer Subscription</h1>
+        <table class="table table-info table-stripped text-center" border="1">
+          <tr>
+            <td>Nomor</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Phone</td>
+            <td>Date Subscription</td>
+            <td>Membership Plan Id</td>
+            <td>Action</td>
+          </tr>
+          DATA_TABEL
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
