@@ -11,4 +11,3 @@ maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin
 # Alur Program
 Terdiri dari 3 Halaman CRUD sesuai tabel yang dibuat, yaitu members, membershipPlan, dan Payments
 
-# Dokumentasi
